@@ -5,7 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
+using Microsoft.VisualStudio.Threading;
 using RapidXamlToolkit.Logging;
 using RapidXamlToolkit.Options;
 using RapidXamlToolkit.Resources;
@@ -37,6 +39,12 @@ namespace RapidXamlToolkit.Analyzers
         protected static string[] TypesToSkipWhenCheckingForSubProperties { get; } = new[] { "String", "ValueType", "Object" };
 
         protected static string[] NamesOfPropertiesToExcludeFromOutput { get; } = new[] { "IsInDesignMode", "IsInDesignModeStatic", "DataStore" };
+
+        //public static async Task<Settings> GetSettingsAsync()
+        //{
+        //    await JoinableTaskFactory.SwitchToMainThreadAsync();
+        //    return GetSettings();
+        //}
 
         public static Settings GetSettings()
         {

@@ -68,6 +68,7 @@
     <Compile Include="Analyzers\AnalyzerOutput.cs" />
     <Compile Include="Analyzers\AnalyzerOutputType.cs" />
     <Compile Include="Analyzers\CSharpAnalyzer.cs" />
+    <Compile Include="Analyzers\Diagnostics\RX0001CsSetDatacontext.cs" />
     <Compile Include="Analyzers\IDocumentAnalyzer.cs" />
     <Compile Include="Analyzers\PropertyDetails.cs" />
     <Compile Include="Commands\BaseCommand.cs" />
@@ -721,7 +722,6 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.0-beta006\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.0-beta006\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Page Include="Options\ProfileConfigControl.xaml">
       <SubType>Designer</SubType>
