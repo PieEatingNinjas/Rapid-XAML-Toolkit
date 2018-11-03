@@ -150,6 +150,8 @@ namespace RapidXamlToolkit.Commands
                                     objectDoc.Selection.Insert(contentToAdd);
                                 }
                             }
+
+                            dte.ExecuteCommand("Edit.FormatDocument", string.Empty);
                         }
                     }
                 }
